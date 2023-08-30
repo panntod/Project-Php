@@ -1,5 +1,4 @@
 <!--<input type="submit" name="simpan" value="Tambah Siswa" class="btn btn-primary" style="margin-top: 18px">-->
-
 <!DOCTYPE html>
 
 <html lang="en">
