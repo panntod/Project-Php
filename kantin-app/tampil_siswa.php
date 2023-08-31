@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/css/main.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title></title>
+    <title>Daftar Siswa</title>
+
 </head>
 <body class="container">
-    <div style="padding: 20px; display: flex; justify-content: space-between;">
-        <h3>Tampil Siswa</h3>
-        <div style="display: flex; gap: 10px;">
-            <a href="login.php" class="btn btn-secondary">Login</a>
-            <a href="tambah_siswa.php" class="btn btn-primary">Daftar</a>
+    <div style="padding: 20px; display: flex; justify-content: space-between; height:80px; margin-bottom:20px">
+        
+        <div class="section-header">
+            <h2>Data Siswa</h2>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <a href="tambah_siswa.php" class="btn" style="background: #B4B4B4; border: 0; padding: 14px 45px; color: #fff; transition: 0.4s; border-radius: 50px; box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">Daftar</a>
+            <a href="login.php" class="btn" style="background: var(--color-primary); border: 0; padding: 14px 45px; color: #fff; transition: 0.4s; border-radius: 50px; box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">Login</a>
         </div>
     </div>
 
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped" style="height: 100%; padding: 20px; border-radius: 10px;box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
         <thead>
             <tr>
                 <th>ID</th>

@@ -1,4 +1,3 @@
-<!--<input type="submit" name="simpan" value="Tambah Siswa" class="btn btn-primary" style="margin-top: 18px">-->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -65,10 +64,12 @@
 
                 <div class="my-3">
                     <div class="loading">Loading</div>
-                    <div class="error-message"></div>
+                    <div class="error-message" style="background-color: green; border-radius:11px"></div>
                     <div class="sent-message">Your regristate is succesfully. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit" href="tampil_siswa.php">Tambahkan</button></div>
+                <div class="text-center">
+                    <button type="submit" onclick="validateAndPindah()">Tambahkan</button>
+                </div>
                 </form>
             </div><!-- End Contact Form -->
 
@@ -78,6 +79,25 @@
         </section><!-- End Contact Section -->
         </div>
 
+        <script>
+            function validateAndPindah() {
+                var nama = document.getElementsByName("nama")[0].value;
+                var kelas = document.getElementsByName("kelas")[0].value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if (nama === "" || kelas === "" || email === "" || password === "") {
+                    var errorMessage = document.querySelector(".error-message");
+                    errorMessage.textContent = "Please fill in all fields.";
+                    errorMessage.style.backgroundColor = "red";
+                    errorMessage.style.borderRadius = "11px";
+                    errorMessage.style.display = "block";
+                } else {
+                    // Semua field terisi, pindah ke halaman berikutnya
+                    window.location.href = "tampil_siswa.php";
+                }
+            }
+        </script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
