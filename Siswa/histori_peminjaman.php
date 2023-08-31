@@ -15,7 +15,7 @@
     <tbody>
         <?php 
         include "connect.php";
-        $qry_histori=mysqli_query($conn,"select * from peminjaman_buku order by id_peminjaman_buku desc");
+        $qry_histori = mysqli_query($conn, "select * from peminjaman_buku where id_siswa='".$_SESSION['id_siswa']."'order by id_peminjaman_buku desc");
         $no=0;
         while($dt_histori=mysqli_fetch_array($qry_histori)){
             $no++;

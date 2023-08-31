@@ -50,7 +50,7 @@
                     <div class="sent-message">Your regristate is succesfully. Thank you!</div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" onclick="validateAndPindah()">Update</button>
+                    <button type="submit" onclick="validateAndPindah()">Sign Up</button>
                 </div>
                 </form>
             </div><!-- End Contact Form -->
