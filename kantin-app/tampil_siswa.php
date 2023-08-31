@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Daftar Siswa</title>
+    
+    <style>
+        .tombol{
+            border: 0;
+            padding: 14px 45px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 50px;
+            box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+        }
+        .tombol-kecil{
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    </style>
 
 </head>
 <body class="container">
@@ -15,8 +33,8 @@
         </div>
 
         <div style="display: flex; align-items: center; gap: 10px;">
-            <a href="tambah_siswa.php" class="btn" style="background: #B4B4B4; border: 0; padding: 14px 45px; color: #fff; transition: 0.4s; border-radius: 50px; box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">Daftar</a>
-            <a href="login.php" class="btn" style="background: var(--color-primary); border: 0; padding: 14px 45px; color: #fff; transition: 0.4s; border-radius: 50px; box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">Login</a>
+            <a href="tambah_siswa.php" class="btn tombol" style="background: #B4B4B4;">Daftar</a>
+            <a href="login.php" class="btn tombol" style="background: var(--color-primary);">Login</a>
         </div>
     </div>
 
@@ -43,9 +61,8 @@
                 <td><?=$data_siswa['kelas']?></td> 
                 <td><?=$data_siswa['email']?></td> 
                 <td>
-                    <a href="ubah_siswa.php?id=<?=$data_siswa['id']?>" class="btn btn-success">Ubah</a>
-                     | 
-                    <a href="hapus.php?id=<?=$data_siswa['id']?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')" class="btn btn-danger">Hapus</a>
+                    <a href="ubah_siswa.php?id=<?=$data_siswa['id']?>" class="btn btn-success tombol tombol-kecil">Ubah</a>
+                    <a href="hapus.php?id=<?=$data_siswa['id']?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')" class="btn btn-danger tombol tombol-kecil">Hapus</a>
                 </td>
             </tr>
             <?php 
