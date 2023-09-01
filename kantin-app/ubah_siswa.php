@@ -74,7 +74,7 @@
                 var email = document.getElementById("email").value;
                 var password = document.getElementById("password").value;
 
-                if (nama === "" || kelas === "" || email === "" || password === "") {
+                if (nama === "" || kelas === "" || email === "") {
                     var errorMessage = document.querySelector(".error-message");
                     errorMessage.textContent = "Please fill in all fields.";
                     errorMessage.style.backgroundColor = "red";
