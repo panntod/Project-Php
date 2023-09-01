@@ -47,7 +47,7 @@
                         <input type="email" class="form-control" value="<?=$dt_siswa['email']?>" name="email" id="email" style="height: 50px; border-radius: 10px;" placeholder="Masukan Email" required>
                     </div>
                     <div class="form-group mt-3">
-                        <input type="password" class="form-control" name="password" id="password" style="height: 50px; border-radius: 10px;" placeholder="Masukan Password" required>
+                        <input type="password" class="form-control" name="password" id="password" style="height: 50px; border-radius: 10px;" placeholder="Masukan Password Baru" required>
                 </div>
 
                 <div class="my-3">
