@@ -13,7 +13,7 @@
           <p>Kami Menyediakan Layanan Kantin Sekolah SMK Telkom Malang.</p>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="assets/img/hero-bg.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="bi bi-shop-window"></i>
               </div>
               <h3><?=$dt_warung['nama_warung']?></h3>
               <p><?=$dt_warung['deskripsi']?></p>

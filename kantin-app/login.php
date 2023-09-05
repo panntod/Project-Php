@@ -107,6 +107,7 @@ form{
 							<div class="row">
 								<input type="password" name="password" id="password" class="form__input" placeholder="Password" required>
 							</div>
+							
                             <div class="row text-center d-flex align-items-center">
                             <div class="col">
                             <button type="submit" class="btn">Login</button>
@@ -121,6 +122,6 @@ form{
 			</div>
 		</div>
 	</div>
-    <?php include 'scripts.php' ?>
+	<?php include 'scripts.php' ?>
 </body>
 </html>
