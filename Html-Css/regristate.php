@@ -11,38 +11,38 @@
 
 <body class="bg-gray-100">
     <div class="container mx-auto mt-10 bg-white p-6 rounded-lg shadow-lg" style="width: 600px">
-        <h2 class="text-2xl mb-4">Registrasi</h2>
+        <h2 class="text-2xl font-semibold mb-4 text-center">Registrasi</h2>
         <form action="proses_regristate.php" method="post">
             <div class="block flex">
                 <div class="w-full mb-4 pr-3">
                     <label for="nama_depan" class="block text-gray-600">Nama Depan:</label>
                     <input type="text" id="nama_depan" name="nama_depan"
-                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" autocomplete="off" placeholder="Nama Depan" required>
                 </div>
 
                 <div class="w-full mb-4">
                     <label for="nama_belakang" class="block text-gray-600">Nama Belakang:</label>
                     <input type="text" id="nama_belakang" name="nama_belakang"
-                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" autocomplete="off" placeholder="Nama Belakang" required>
                 </div>
             </div>
 
             <div class="mb-4">
                 <label for="email" class="block text-gray-600">Email:</label>
                 <input type="text" id="email" name="email"
-                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" autocomplete="off" placeholder="Email"  required>
             </div>
 
             <div class="mb-4">
                 <label for="password" class="block text-gray-600">Password:</label>
                 <input type="password" id="password" name="password"
-                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Password"required>
             </div>
 
             <div class="mb-4">
                 <label for="tanggal_lahir" class="block text-gray-600">Tanggal Lahir:</label>
                 <input type="date" id="tanggal_lahir" name="tanggal_lahir"
-                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="tanggal/ bulan/ tahun" required>
             </div>
 
 
