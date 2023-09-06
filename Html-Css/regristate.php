@@ -19,7 +19,7 @@
                     <input type="text" id="nama_depan" name="nama_depan"
                         class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
                 </div>
-    
+
                 <div class="w-full mb-4">
                     <label for="nama_belakang" class="block text-gray-600">Nama Belakang:</label>
                     <input type="text" id="nama_belakang" name="nama_belakang"
@@ -40,28 +40,36 @@
             </div>
 
             <div class="mb-4">
-    <label for="tanggal_lahir" class="block text-gray-600">Tanggal Lahir:</label>
-    <div class="flex w-full max-w-xl">
-        <!-- Bagian Tanggal -->
-        <div class="w-1/3 pr-2">
-            <input type="text" id="tanggal" name="tanggal"
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                placeholder="Tanggal" required>
-        </div>
-        <!-- Bagian Bulan -->
-        <div class="w-1/3 px-2">
-            <input type="text" id="bulan" name="bulan"
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                placeholder="Bulan" required>
-        </div>
-        <!-- Bagian Tahun -->
-        <div class="w-1/3 pl-2">
-            <input type="text" id="tahun" name="tahun"
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                placeholder="Tahun" required>
-        </div>
-    </div>
-</div>
+                <label for="tanggal_lahir" class="block text-gray-600">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+            </div>
+
+
+            <!-- ERROR -->
+            <!-- <div class="mb-4">
+                <label for="tanggal_lahir" class="block text-gray-600">Tanggal Lahir:</label>
+                <div class="flex w-full max-w-xl">
+                    Bagian Tanggal
+                    <div class="w-1/3 pr-2">
+                        <input type="date" id="tanggal" name="tanggal"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                            placeholder="Tanggal" required>
+                    </div>
+                    Bagian Bulan
+                    <div class="w-1/3 px-2">
+                        <input type="date" id="bulan" name="bulan"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                            placeholder="Bulan" required>
+                    </div>
+                    Bagian Tahun
+                    <div class="w-1/3 pl-2">
+                        <input type="date" id="tahun" name="tahun"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                            placeholder="Tahun" required>
+                    </div>
+                </div>
+            </div> -->
 
 
             <div class="mb-4">
