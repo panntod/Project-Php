@@ -22,6 +22,5 @@ if ($_POST) {
             echo "<script>alert('Gagal menambahkan siswa');location.href='tambah_siswa.php';</script>";
         }
     }
-    // JANGAN menggunakan header() di sini, karena Anda sudah menggunakan echo sebelumnya
 }
 ?>

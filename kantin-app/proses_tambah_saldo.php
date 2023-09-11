@@ -12,7 +12,7 @@ if ($_POST) {
         $insert = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
         if ($insert) {
-            echo "<script>alert('Sukses menambahkan saldo');location.href='tambah_saldo.php';</script>";
+            echo "<script>alert('Sukses menambahkan saldo');location.href='home.php';</script>";
         } else {
             echo "<script>alert('Gagal menambahkan saldo');location.href='tambah_saldo.php';</script>";
         }

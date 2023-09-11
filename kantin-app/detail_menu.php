@@ -18,7 +18,7 @@
         }
     </style>
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="margin-top: 30px">
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">

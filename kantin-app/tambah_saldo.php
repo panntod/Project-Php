@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="row">
                                     <input type="number" name="saldo" id="saldo" class="form__input"
-                                        placeholder="Masukan Saldo" required>
+                                        placeholder="Masukan Saldo" min="500" required>
                                 </div>
 
                                 <div class="row text-center d-flex align-items-center">
