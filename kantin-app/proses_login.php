@@ -13,7 +13,7 @@ if($_POST){
         if(mysqli_num_rows($qry_login)>0){
             $dt_login=mysqli_fetch_array($qry_login);
             session_start();
-            $_SESSION['id']=$dt_login['id'];
+            $_SESSION['id_siswa']=$dt_login['id_siswa'];
             $_SESSION['nama']=$dt_login['nama'];
             $_SESSION['kelas']=$dt_login['kelas'];
             $_SESSION['status_login']=true;

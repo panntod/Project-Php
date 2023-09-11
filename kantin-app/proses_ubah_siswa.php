@@ -15,18 +15,18 @@ if($_POST){
     } else {
         include "server.php";
         if(empty($password)){
-            $update=mysqli_query($conn,"UPDATE siswa SET nama= '$nama', kelas='$kelas', email= '$email', password= '$password' WHERE id = $id") or die(mysqli_error($conn));
+            $update=mysqli_query($conn,"UPDATE siswa SET nama= '$nama', kelas='$kelas', email= '$email', password= '$password' WHERE id_siswa = $id_siswa") or die(mysqli_error($conn));
             if($update){
                 echo "<script>alert('Sukses update siswa');location.href='ubah_siswa.php';</script>";
             } else {
-                echo "<script>alert('Gagal update siswa');location.href='ubah_siswa.php?id=".$id."';</script>";
+                echo "<script>alert('Gagal update siswa');location.href='ubah_siswa.php?id_siswa=".$id_siswa."';</script>";
             }
         } else {
-            $update=mysqli_query($conn,"update siswa set nama ='$nama_siswa', kelas='$kelas', email ='$email',  password='$password' where id = '$id'") or die(mysqli_error($conn));
+            $update=mysqli_query($conn,"update siswa set nama ='$nama_siswa', kelas='$kelas', email ='$email',  password='$password' where id_siswa = '$id_siswa'") or die(mysqli_error($conn));
             if($update){
                 echo "<script>alert('Sukses update siswa');location.href='ubah_siswa.php';</script>";
             } else {
-                echo "<script>alert('Gagal update siswa');location.href='ubah_siswa.php?id=".$id."';</script>";
+                echo "<script>alert('Gagal update siswa');location.href='ubah_siswa.php?id_siswa=".$id_siswa."';</script>";
             }
         }
         

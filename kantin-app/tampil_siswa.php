@@ -2,28 +2,9 @@
 <html>
 <head>
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <?php include 'style.php'?>
     <title>Daftar Siswa</title>
-    
-    <style>
-        .tombol{
-            border: 0;
-            padding: 14px 45px;
-            color: #fff;
-            transition: 0.4s;
-            border-radius: 50px;
-            box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-        }
-        .tombol-kecil{
-            width: 100px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-    </style>
-
+  
 </head>
 <body class="container">
     <div style="padding: 20px; display: flex; justify-content: space-between; height:80px; margin-bottom:20px">
@@ -56,13 +37,13 @@
             while($data_siswa=mysqli_fetch_array($qry_siswa)){
             $no++;?>
             <tr>
-                <td><?=$data_siswa['id']?></td>
+                <td><?=$data_siswa['id_siswa']?></td>
                 <td><?=$data_siswa['nama']?></td>
                 <td><?=$data_siswa['kelas']?></td> 
                 <td><?=$data_siswa['email']?></td> 
                 <td>
-                    <a href="ubah_siswa.php?id=<?=$data_siswa['id']?>" class="btn btn-success tombol tombol-kecil">Ubah</a>
-                    <a href="hapus.php?id=<?=$data_siswa['id']?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')" class="btn btn-danger tombol tombol-kecil">Hapus</a>
+                    <a href="ubah_siswa.php?id_siswa=<?=$data_siswa['id_siswa']?>" class="btn btn-success tombol tombol-kecil">Ubah</a>
+                    <a href="hapus.php?id_siswa=<?=$data_siswa['id_siswa']?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')" class="btn btn-danger tombol tombol-kecil">Hapus</a>
                 </td>
             </tr>
             <?php 
