@@ -37,7 +37,7 @@
 
                         <div class="col-lg-6">
 
-                            <form action="masukan_keranjang.php?id_menu=<?= $dt_menu['id_menu'] ?>" method="post">
+                            <form action="masuk_keranjang.php?id_menu=<?= $dt_menu['id_menu'] ?>" method="post">
                                 <div class="stats-item d-flex align-items-center">
                                     <h4><strong>
                                             Menu:
@@ -60,7 +60,7 @@
                                 </div><!-- End Stats Item -->
 
                                 <div class="stats-item d-flex align-items-center">
-                                    <h4><strong>Jumlah: </strong><input type="number" name="jumlah_pinjam" value="1"
+                                    <h4><strong>Jumlah: </strong><input type="number" name="qty" value="1"
                                              min="1"></h4>
                                 </div><!-- End Stats Item -->
 
