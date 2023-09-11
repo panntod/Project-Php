@@ -11,6 +11,12 @@
     $dt_menu = mysqli_fetch_array($qry_detail_menu);
     ?>
 
+    <style>
+        input, input[type="number"]:focus {
+            border: none;
+            outline: none;
+        }
+    </style>
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
@@ -25,8 +31,8 @@
                     <div class="row gy-4 align-items-center">
 
                         <div class="col-lg-6">
-                            <img src="<?= $dt_menu['gambar'] ?>" class="img-fluid rounded-2 mb-4" alt="">
-                            <h4><a href="warung.php?id_warung=<?= $dt_menu['id_warung'] ?>" title="More Details"><?= $dt_menu['nama_menu'] ?></a></h4>
+                            <img src="<?= $dt_menu['gambar'] ?>" class="img-fluid rounded-2 mb-4" alt="" style="width: 500px; height: 500px;">
+                            <h4><a href="warung.php?id_warung=<?= $dt_menu['id_warung'] ?>" title="More Details"><i class="bi bi-arrow-left"></i> Kembali</a></h4>
                         </div>
 
                         <div class="col-lg-6">
@@ -43,7 +49,8 @@
                                 <div class="stats-item d-flex align-items-center">
                                     <h4 style="margin-right: 10px"><strong>Harga:</strong></h4>
                                     <h4><span data-purecounter-start="0" data-purecounter-end="<?= $dt_menu['harga'] ?>"
-                                            data-purecounter-duration="1" class="purecounter" style="font-size: 30px"></span></h4>
+                                            data-purecounter-duration="1" class="purecounter"
+                                            style="font-size: 30px"></span></h4>
                                 </div><!-- End Stats Item -->
 
                                 <div class="stats-item d-flex align-items-center">
@@ -54,10 +61,11 @@
 
                                 <div class="stats-item d-flex align-items-center">
                                     <h4><strong>Jumlah: </strong><input type="number" name="jumlah_pinjam" value="1"
-                                            style="border: none" min="1"></h4>
+                                             min="1"></h4>
                                 </div><!-- End Stats Item -->
 
-                                <input class="btn btn-success tombol" type="submit" value="PESAN" style="margin-top: 10px;">
+                                <input class="btn btn-success tombol" type="submit" value="PESAN"
+                                    style="margin-top: 10px">
                             </form>
                         </div>
 

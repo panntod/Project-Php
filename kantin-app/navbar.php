@@ -17,7 +17,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="home.php">Home</a></li>
-          <li><a href="transaksi.php">Transaksi</a></li>
+          <li><a href="keranjang.php">Keranjang <i class="bi bi-basket"></i></a></li>
+          <li><a href="transaksi.php">Transaksi <i class="bi bi-cart"></i></a></li>
 
           <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
