@@ -4,10 +4,10 @@ if ($_POST) {
     $id_siswa = $_SESSION['id_siswa'];
     $saldo = $_POST['saldo'];
     if (empty($saldo)) {
-        echo "<script>alert('Saldo tidak boleh kosong');location.href='tambah_saldo.php';</script>";
+        echo "<script>alert('saldo tidak boleh kosong');location.href='tambah_saldo.php';</script>";
     } else {
         include "server.php"; 
-        $query = "UPDATE siswa SET saldo = saldo + $saldo WHERE id_siswa = $id_siswa";
+        $query = "UPDATE siswa SET saldo_siswa = saldo_siswa + $saldo WHERE id_siswa = $id_siswa";
 
         $insert = mysqli_query($conn, $query) or die(mysqli_error($conn));
 

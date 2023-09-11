@@ -18,7 +18,7 @@
         }
     </style>
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about" style="margin-top: 30px">
+    <section id="about" class="about jarak">
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">

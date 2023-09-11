@@ -14,6 +14,7 @@ if($_POST){
             $dt_login=mysqli_fetch_array($qry_login);
             session_start();
             $_SESSION['id_siswa']=$dt_login['id_siswa'];
+            $_SESSION['saldo_siswa']=$dt_login['saldo_siswa'];
             $_SESSION['nama']=$dt_login['nama'];
             $_SESSION['kelas']=$dt_login['kelas'];
             $_SESSION['status_login']=true;

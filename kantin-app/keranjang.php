@@ -3,9 +3,11 @@
 
 <head>
     <title>Keranjang</title>
-    <?php include 'navbar.php'; ?>
+    <?php 
+        include 'navbar.php'; 
+    ?>
 
-    <main class="container">
+    <section class="container">
         <div>
             <div class="section-header">
                 <h2>Keranjang <span style="color: var(--color-primary)">
@@ -13,13 +15,14 @@
                     </span></h2>
             </div>
         </div>
-
+        
         <table class="table table-hover table-striped"
             style="height: 100%; padding: 20px; border-radius: 10px;box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
             <thead>
                 <tr>
                     <th>NO</th>
                     <th>NAMA MENU</th>
+                    <th>WARUNG</th>
                     <th>JUMLAH</th>
                     <th>TOTAL</th>
                     <th>AKSI</th>
@@ -40,13 +43,16 @@
                             <?= $val_produk['nama_menu'] ?>
                         </td>
                         <td>
+                            <?= $val_produk['nama_warung'] ?>
+                        </td>
+                        <td>
                             <?= $val_produk['qty'] ?>
                         </td>
                         <td>
                             <?= $total ?>
                         </td>
                         <td>
-                            <a href="hapus.php?id_siswa=<?= $data_siswa['id_siswa'] ?>"
+                            <a href="hapus_cart.php?id=<?= $key_produk ?>"
                                 onclick="return confirm('Apakah anda yakin pesanan data ini?')"
                                 class="btn btn-danger tombol tombol-kecil">Hapus</a>
                         </td>
@@ -55,9 +61,8 @@
                 <?php endforeach ?>
             </tbody>
         </table>
-        <a href="checkout.php" class="btn btn-primary"
-            style="margin-left: 20px; pading-left: 5px; pading-right: 5px; border-radius: 10px">Check Out</a>
+        <a href="checkout.php" class="btn tombol" style="background: var(--color-primary); margin-bottom: 20%">Check Out</a>
 
         <?php include 'scripts.php' ?>
-    </main>
+    </section>
     <?php include "footer.php" ?>

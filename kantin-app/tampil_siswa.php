@@ -25,6 +25,7 @@
                 <th>NAMA SISWA</th>
                 <th>KELAS</th>
                 <th>EMAIL</th>
+                <th>SALDO</th>
                 <th>AKSI</th>
             </tr>
         </thead>
@@ -40,6 +41,7 @@
                 <td><?=$data_siswa['nama']?></td>
                 <td><?=$data_siswa['kelas']?></td> 
                 <td><?=$data_siswa['email']?></td> 
+                <td><?=$data_siswa['saldo_siswa']?></td> 
                 <td>
                     <a href="ubah_siswa.php?id_siswa=<?=$data_siswa['id_siswa']?>" class="btn btn-success tombol tombol-kecil">Ubah</a>
                     <a href="hapus.php?id_siswa=<?=$data_siswa['id_siswa']?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')" class="btn btn-danger tombol tombol-kecil">Hapus</a>
