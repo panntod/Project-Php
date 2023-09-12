@@ -1,15 +1,31 @@
-<?php
-include "navbar.php";
-?>
-<section class="container">
-    <div>
-        <div class="section-header">
-            <h2>History Transaksi</h2>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>History Pembayaran</title>
+    <?php
+    include "navbar.php";
+    ?>
+    <style>
+        ol {
+            padding: 0 0 0 24px;
+        }
+
+        table {
+            border-radius: 10px;
+            box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <section class="container" style="margin-bottom: 10%;">
+        <div>
+            <div class="section-header">
+                <h2>Keranjang <span style="color: var(--color-primary)">
+                        <?= $_SESSION['nama'] ?>
+                    </span></h2>
+            </div>
         </div>
-    </div>
-    <table class="table table-hover table-striped">
-        <table class="table table-hover table-striped"
-            style="padding: 20px; border-radius: 10px;box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
+
+        <table class="table table-hover table-striped">
             <thead>
                 <tr>
                     <th>NO</th>
@@ -17,6 +33,7 @@ include "navbar.php";
                     <th>NAMA TOKO</th>
                     <th>JUMLAH</th>
                     <th>TOTAL</th>
+                    <th>TANGGAL PEMBAYARAN</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +41,7 @@ include "navbar.php";
                 include "server.php";
                 $qry_histori = mysqli_query($conn, "SELECT * FROM pembayaran WHERE id_siswa='" . $_SESSION['id_siswa'] . "' ORDER BY id_pembayaran DESC");
                 $no = 0;
-                
+
                 while ($dt_histori = mysqli_fetch_array($qry_histori)) {
                     $no++;
 
@@ -53,10 +70,10 @@ include "navbar.php";
                         <td>
                             <?= $no ?>
                         </td>
-                        <td>
+                        <td style="padding: 0">
                             <?= $menu_dipilih ?>
                         </td>
-                        <td>
+                        <td style="padding: 0">
                             <?= $warung_dipilih ?>
                         </td>
                         <td>
@@ -64,6 +81,9 @@ include "navbar.php";
                         </td>
                         <td>
                             <?= $dt_detail['total_harga'] ?>
+                        </td>
+                        <td>
+                            <?= $dt_histori['tanggal_pembayaran'] ?>
                         </td>
                     </tr>
                     <?php
@@ -73,8 +93,7 @@ include "navbar.php";
 
 
         </table>
-    </table>
-</section>
-<?php
-include "footer.php";
-?>
+    </section>
+    <?php
+    include "footer.php";
+    ?>
