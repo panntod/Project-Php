@@ -15,13 +15,14 @@
             border-radius: 10px;
             box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
         }
+        .jarak-bawah {
+            margin-bottom: 20%
+        }
     </style>
-    <section class="container" style="margin-bottom: 10%;">
+    <section class="container jarak-bawah jarak">
         <div>
             <div class="section-header">
-                <h2>Keranjang <span style="color: var(--color-primary)">
-                        <?= $_SESSION['nama'] ?>
-                    </span></h2>
+                <h2>History Transaksi</h2>
             </div>
         </div>
 
@@ -90,8 +91,6 @@
                 }
                 ?>
             </tbody>
-
-
         </table>
     </section>
     <?php

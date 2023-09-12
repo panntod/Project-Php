@@ -7,7 +7,29 @@
     include 'navbar.php';
     ?>
 
-    <section class="container">
+    <style>
+        ol {
+            padding: 0 0 0 24px;
+        }
+
+        table {
+            height: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .jarak-bawah {
+            background: var(--color-primary);
+            margin-bottom: 20%
+        }
+
+        .tombol-a {
+            padding: 10px;
+        }
+    </style>
+
+    <section class="container jarak">
         <div>
             <div class="section-header">
                 <h2>Keranjang <span style="color: var(--color-primary)">
@@ -16,8 +38,9 @@
             </div>
         </div>
 
-        <table class="table table-hover table-striped"
-            style="height: 100%; padding: 20px; border-radius: 10px; box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
+        <h5 class="tombol-a"><a href="home.php" title="More Details"><i class="bi bi-arrow-left"></i> Pesan Lagi</a>
+        </h5>
+        <table class="table table-hover table-striped">
             <thead>
                 <tr>
                     <th>NO</th>
@@ -30,10 +53,15 @@
             </thead>
             <tbody>
                 <?php
+                // Inisialisasi variabel total belanja
+                $totalBelanja = 0;
+
                 // Periksa apakah session 'cart' sudah ada dan tidak kosong
                 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                     foreach ($_SESSION['cart'] as $key_produk => $val_produk):
-
+                        // Hitung total untuk setiap item dan tambahkan ke total belanja
+                        $totalItem = $val_produk['total'];
+                        $totalBelanja += $totalItem;
                         ?>
                         <tr>
                             <td>
@@ -60,13 +88,19 @@
                     <?php endforeach;
                 } else {
                     // Tampilkan pesan jika keranjang kosong
-                    echo '<tr><td colspan="6">Keranjang Anda kosong.</td></tr>';
+                    echo '<tr><td></td><td colspan="5">Keranjang Anda kosong.</td></tr>';
                 }
                 ?>
-            </tbody>
+                <tr>
+                    <td></td>
+                    <td colspan="1">Total Belanja Anda:</td>
+                    <td colspan="4">
+                        <?= $totalBelanja ?>
+                    </td>
+                </tr>
 
         </table>
-        <a href="checkout.php" class="btn tombol" style="background: var(--color-primary); margin-bottom: 20%">Check
+        <a href="checkout.php" class="btn tombol jarak-bawah" style="">Check
             Out</a>
     </section>
-<?php include "footer.php" ?>
+    <?php include "footer.php" ?>

@@ -17,6 +17,7 @@
             outline: none;
         }
     </style>
+    
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about jarak">
         <div class="container" data-aos="fade-up">
