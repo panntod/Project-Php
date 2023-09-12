@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <h5 class="tombol-a"><a href="home.php" title="More Details"><i class="bi bi-arrow-left"></i> Pesan Lagi</a>
+        <h5 class="tombol-a"><a href="home.php#services" title="More Details"><i class="bi bi-arrow-left"></i> Pesan Lagi</a>
         </h5>
         <table class="table table-hover table-striped">
             <thead>
