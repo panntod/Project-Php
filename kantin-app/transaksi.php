@@ -1,0 +1,80 @@
+<?php
+include "navbar.php";
+?>
+<section class="container">
+    <div>
+        <div class="section-header">
+            <h2>History Transaksi</h2>
+        </div>
+    </div>
+    <table class="table table-hover table-striped">
+        <table class="table table-hover table-striped"
+            style="padding: 20px; border-radius: 10px;box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>NAMA MENU</th>
+                    <th>NAMA TOKO</th>
+                    <th>JUMLAH</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                include "server.php";
+                $qry_histori = mysqli_query($conn, "SELECT * FROM pembayaran WHERE id_siswa='" . $_SESSION['id_siswa'] . "' ORDER BY id_pembayaran DESC");
+                $no = 0;
+                
+                while ($dt_histori = mysqli_fetch_array($qry_histori)) {
+                    $no++;
+
+                    // Menampilkan nama menu
+                    $menu_dipilih = "<ol>";
+                    $qry_menu = mysqli_query($conn, "SELECT * FROM detail_pembayaran JOIN menu ON menu.id_menu = detail_pembayaran.id_menu WHERE id_pembayaran = '" . $dt_histori['id_pembayaran'] . "'");
+                    while ($dt_menu = mysqli_fetch_array($qry_menu)) {
+                        $menu_dipilih .= "<li>" . $dt_menu['nama_menu'] . "</li>";
+                    }
+                    $menu_dipilih .= "</ol>";
+
+                    // Menampilkan nama toko
+                    $warung_dipilih = "<ol>";
+                    $qry_warung = mysqli_query($conn, "SELECT * FROM detail_pembayaran JOIN warung ON warung.id_warung = detail_pembayaran.id_warung WHERE id_pembayaran = '" . $dt_histori['id_pembayaran'] . "'");
+                    while ($dt_warung = mysqli_fetch_array($qry_warung)) {
+                        $warung_dipilih .= "<li>" . $dt_warung['nama_warung'] . "</li>";
+                    }
+                    $warung_dipilih .= "</ol>";
+
+                    // Menampilkan qty, harga, dan total
+                    $qry_detail = mysqli_query($conn, "SELECT SUM(qty) as total_qty, SUM(total) AS total_harga FROM detail_pembayaran WHERE id_pembayaran = '" . $dt_histori['id_pembayaran'] . "'");
+                    $dt_detail = mysqli_fetch_array($qry_detail);
+
+                    ?>
+                    <tr>
+                        <td>
+                            <?= $no ?>
+                        </td>
+                        <td>
+                            <?= $menu_dipilih ?>
+                        </td>
+                        <td>
+                            <?= $warung_dipilih ?>
+                        </td>
+                        <td>
+                            <?= $dt_detail['total_qty'] ?>
+                        </td>
+                        <td>
+                            <?= $dt_detail['total_harga'] ?>
+                        </td>
+                    </tr>
+                    <?php
+                }
+                ?>
+            </tbody>
+
+
+        </table>
+    </table>
+</section>
+<?php
+include "footer.php";
+?>

@@ -49,7 +49,7 @@
                                 <?= $val_produk['qty'] ?>
                             </td>
                             <td>
-                            <?= $val_produk['total'] ?>
+                                <?= $val_produk['total'] ?>
                             </td>
                             <td>
                                 <a href="hapus_cart.php?id=<?= $key_produk ?>"
@@ -68,7 +68,5 @@
         </table>
         <a href="checkout.php" class="btn tombol" style="background: var(--color-primary); margin-bottom: 20%">Check
             Out</a>
-
-        <?php include 'scripts.php' ?>
     </section>
-    <?php include "footer.php" ?>
+<?php include "footer.php" ?>

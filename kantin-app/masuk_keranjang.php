@@ -12,6 +12,7 @@ if ($_POST) {
 
     $_SESSION['cart'][] = array(
         'id_menu' => $dt_menu['id_menu'],
+        'id_warung' => $dt_menu['id_warung'],
         'nama_warung' => $dt_menu['nama_warung'],
         'nama_menu' => $dt_menu['nama_menu'],
         'qty' => $_POST['qty'],
