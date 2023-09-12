@@ -16,7 +16,7 @@
           <p>Kami Menyediakan Layanan Kantin Sekolah SMK Telkom Malang.</p>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-bg.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="assets/img/hero-bg-rn.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>

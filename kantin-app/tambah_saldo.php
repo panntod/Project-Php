@@ -121,7 +121,7 @@
                         <div class="row">
                             <form action="proses_tambah_saldo.php" method="post" class="form-group">
                                 <div class="row">
-                                    <h5 style="text-align: left">
+                                    <h5 style="text-align: left"> Saldo
                                         <?= $_SESSION['nama'] ?>
                                     </h5>
                                 </div>

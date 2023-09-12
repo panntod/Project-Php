@@ -3,8 +3,8 @@
 
 <head>
     <title>Keranjang</title>
-    <?php 
-        include 'navbar.php'; 
+    <?php
+    include 'navbar.php';
     ?>
 
     <section class="container">
@@ -15,9 +15,9 @@
                     </span></h2>
             </div>
         </div>
-        
+
         <table class="table table-hover table-striped"
-            style="height: 100%; padding: 20px; border-radius: 10px;box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
+            style="height: 100%; padding: 20px; border-radius: 10px; box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);">
             <thead>
                 <tr>
                     <th>NO</th>
@@ -30,38 +30,44 @@
             </thead>
             <tbody>
                 <?php
-                foreach (@$_SESSION['cart'] as $key_produk => $val_produk):
-                    $qty = $val_produk['qty'];
-                    $harga = $val_produk['harga'];
-                    $total = $qty * $harga;
-                    ?>
-                    <tr>
-                        <td>
-                            <?= ($key_produk + 1) ?>
-                        </td>
-                        <td>
-                            <?= $val_produk['nama_menu'] ?>
-                        </td>
-                        <td>
-                            <?= $val_produk['nama_warung'] ?>
-                        </td>
-                        <td>
-                            <?= $val_produk['qty'] ?>
-                        </td>
-                        <td>
-                            <?= $total ?>
-                        </td>
-                        <td>
-                            <a href="hapus_cart.php?id=<?= $key_produk ?>"
-                                onclick="return confirm('Apakah anda yakin pesanan data ini?')"
-                                class="btn btn-danger tombol tombol-kecil">Hapus</a>
-                        </td>
-                    </tr>
+                // Periksa apakah session 'cart' sudah ada dan tidak kosong
+                if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                    foreach ($_SESSION['cart'] as $key_produk => $val_produk):
 
-                <?php endforeach ?>
+                        ?>
+                        <tr>
+                            <td>
+                                <?= ($key_produk + 1) ?>
+                            </td>
+                            <td>
+                                <?= $val_produk['nama_menu'] ?>
+                            </td>
+                            <td>
+                                <?= $val_produk['nama_warung'] ?>
+                            </td>
+                            <td>
+                                <?= $val_produk['qty'] ?>
+                            </td>
+                            <td>
+                            <?= $val_produk['total'] ?>
+                            </td>
+                            <td>
+                                <a href="hapus_cart.php?id=<?= $key_produk ?>"
+                                    onclick="return confirm('Apakah anda yakin pesanan data ini?')"
+                                    class="btn btn-danger tombol tombol-kecil">Hapus</a>
+                            </td>
+                        </tr>
+                    <?php endforeach;
+                } else {
+                    // Tampilkan pesan jika keranjang kosong
+                    echo '<tr><td colspan="6">Keranjang Anda kosong.</td></tr>';
+                }
+                ?>
             </tbody>
+
         </table>
-        <a href="checkout.php" class="btn tombol" style="background: var(--color-primary); margin-bottom: 20%">Check Out</a>
+        <a href="checkout.php" class="btn tombol" style="background: var(--color-primary); margin-bottom: 20%">Check
+            Out</a>
 
         <?php include 'scripts.php' ?>
     </section>
