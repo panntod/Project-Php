@@ -47,7 +47,7 @@
                     <th>NAMA MENU</th>
                     <th>WARUNG</th>
                     <th>JUMLAH</th>
-                    <th>TOTAL</th>
+                    <th>HARGA</th>
                     <th>AKSI</th>
                 </tr>
             </thead>

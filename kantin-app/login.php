@@ -125,7 +125,7 @@
 						<form action="proses_login.php" method="post" class="form-group">
 							<div class="row">
 								<input type="email" name="email" id="email" class="form__input" placeholder="Email"
-									required>
+									autocomplete="off" required>
 							</div>
 							<div class="row">
 								<input type="password" name="password" id="password" class="form__input"
