@@ -28,13 +28,13 @@
 
             <?php 
                 include "server.php";
-                $qry_get_siswa=mysqli_query($conn,"select * from siswa where id = '{$_GET['id']}'");
+                $qry_get_siswa=mysqli_query($conn,"select * from siswa where id_siswa = '{$_GET['id_siswa']}'");
                 $dt_siswa=mysqli_fetch_array($qry_get_siswa);
             ?>
 
             <div class="col-lg-8">
                 <form action="proses_ubah_siswa.php" method="post" class="php-email-form">
-                <input type="hidden" name="id" value="<?= $dt_siswa['id'] ?>">
+                <input type="hidden" name="id_siswa" value="<?= $dt_siswa['id_siswa'] ?>">
                 <div class="row">
                     <div class="form-group mt-3">
                         <input type="text" name="nama" value="<?=$dt_siswa['nama']?>" class="form-control" style="height: 50px; border-radius: 10px;" placeholder="Masukan Nama" required>
@@ -44,10 +44,13 @@
                         </div>
                     </div>
                     <div class="form-group mt-3">
+                        <input type="number" class="form-control" value="<?=$dt_siswa['saldo_siswa']?>" name="saldo_siswa" style="height: 50px; border-radius: 10px;" placeholder="Masukan Saldo" required>
+                    </div>
+                    <div class="form-group mt-3">
                         <input type="email" class="form-control" value="<?=$dt_siswa['email']?>" name="email" id="email" style="height: 50px; border-radius: 10px;" placeholder="Masukan Email" required>
                     </div>
                     <div class="form-group mt-3">
-                        <input type="password" class="form-control" name="password" id="password" style="height: 50px; border-radius: 10px;" placeholder="Masukan Password Baru" required>
+                        <input type="password" class="form-control" name="password" id="password" style="height: 50px; border-radius: 10px;" placeholder="Masukan Password Baru">
                 </div>
 
                 <div class="my-3">
@@ -56,7 +59,7 @@
                     <div class="sent-message">Your regristate is succesfully. Thank you!</div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" onclick="validateAndPindah()">Tambahkan</button>
+                    <button type="submit" onclick="validateAndPindah()">Ubah</button>
                 </div>
                 </form>
             </div><!-- End Contact Form -->
