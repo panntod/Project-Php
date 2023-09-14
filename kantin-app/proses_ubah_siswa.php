@@ -3,7 +3,6 @@ if($_POST){
     $id=$_POST['id_siswa'];
     $nama_siswa=$_POST['nama'];
     $kelas=$_POST['kelas'];
-    $saldo=$_POST['saldo_siswa'];
     $email=$_POST['email'];
     $password = md5($_POST['password']); // Enkripsi password dengan md5()
 

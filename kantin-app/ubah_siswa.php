@@ -44,9 +44,6 @@
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <input type="number" class="form-control" value="<?=$dt_siswa['saldo_siswa']?>" name="saldo_siswa" style="height: 50px; border-radius: 10px;" placeholder="Masukan Saldo" required>
-                    </div>
-                    <div class="form-group mt-3">
                         <input type="email" class="form-control" value="<?=$dt_siswa['email']?>" name="email" id="email" style="height: 50px; border-radius: 10px;" placeholder="Masukan Email" required>
                     </div>
                     <div class="form-group mt-3">
