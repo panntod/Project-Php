@@ -36,8 +36,7 @@ include 'style.php';
             </ul>
           </li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+  </header>

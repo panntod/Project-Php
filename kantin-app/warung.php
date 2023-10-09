@@ -12,7 +12,7 @@
   ?>
 
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio sections-bg">
+  <section id="portfolio" class="portfolio sections-bg min-height">
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
