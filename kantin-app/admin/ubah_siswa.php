@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Update Page</title>
-        <?php include 'style.php'?>
+        <?php include 'link.style.php'?>
     </head>
 
     <body>
@@ -21,7 +21,7 @@
             <div class="col-lg-4">
 
                 <div class="info-container d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+                <img src="../assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
                 </div>
 
             </div>
@@ -86,6 +86,6 @@
                 }
             }
         </script>
-         <?php include "scripts.php"; ?>
+         <?php include "link.scripts.php"; ?>
     </body>
 </html>
