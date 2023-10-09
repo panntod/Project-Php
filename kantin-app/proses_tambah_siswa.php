@@ -17,9 +17,9 @@ if ($_POST) {
         include "server.php";
         $insert = mysqli_query($conn, "INSERT INTO siswa (nama, kelas, email, password) VALUES ('$nama_siswa', '$kelas', '$email', '$password')") or die(mysqli_error($conn));
         if ($insert) {
-            echo "<script>alert('Sukses menambahkan siswa');location.href='tambah_siswa.php';</script>";
+            echo "<script>alert('Sukses menambahkan siswa');location.href='login.php';</script>";
         } else {
-            echo "<script>alert('Gagal menambahkan siswa');location.href='tambah_siswa.php';</script>";
+            echo "<script>alert('Gagal menambahkan siswa');location.href='login.php';</script>";
         }
     }
 }

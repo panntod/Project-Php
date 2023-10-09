@@ -76,7 +76,7 @@
                     errorMessage.style.display = "block";
                 } else {
                     // Semua field terisi, pindah ke halaman berikutnya
-                    window.location.href = "tampil_siswa.php";
+                    window.location.href = "login.php";
                 }
             }
         </script>
