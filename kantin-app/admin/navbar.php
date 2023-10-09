@@ -2,6 +2,8 @@
 session_start();
 if ($_SESSION['status_login'] != true) {
     header('location: ../login.php');
+}else if($_SESSION['role'] != 'admin') {
+    header('location: ../home.php');
 }
 ?>
 

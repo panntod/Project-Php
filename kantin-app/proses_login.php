@@ -19,6 +19,7 @@ if ($_POST) {
                 $_SESSION['saldo_siswa'] = $dt_login['saldo_siswa'];
                 $_SESSION['nama'] = $dt_login['nama'];
                 $_SESSION['kelas'] = $dt_login['kelas'];
+                $_SESSION['role'] = 'admin';
                 $_SESSION['status_login'] = true;
                 header("location: admin/home.php");
             } else if ($dt_login['role'] == 'siswa') {
@@ -27,6 +28,7 @@ if ($_POST) {
                 $_SESSION['saldo_siswa'] = $dt_login['saldo_siswa'];
                 $_SESSION['nama'] = $dt_login['nama'];
                 $_SESSION['kelas'] = $dt_login['kelas'];
+                $_SESSION['role'] = 'siswa';
                 $_SESSION['status_login'] = true;
                 header("location: home.php");
             } else {

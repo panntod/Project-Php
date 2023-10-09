@@ -30,7 +30,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-                <h2>Warung</h2>
+                <h2>Kontrol Panel</h2>
             </div>
 
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
