@@ -2,12 +2,12 @@
 session_start();
 if ($_SESSION['status_login'] != true) {
     header('location: ../login.php');
-}else if($_SESSION['role'] != 'admin') {
+} else if ($_SESSION['role'] != 'admin') {
     header('location: ../home.php');
 }
 ?>
 
-<?php include 'link.style.php'?>
+<?php include 'link.style.php' ?>
 </head>
 
 <body>
@@ -26,6 +26,7 @@ if ($_SESSION['status_login'] != true) {
                     <li class="dropdown"><a href="#"><span>Profile</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
+                            <li><a href="../home.php">Home Siswa</a></li>
                             <li><a href="logout.php">Log Out</a></li>
                         </ul>
                     </li>

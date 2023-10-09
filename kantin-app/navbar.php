@@ -31,7 +31,12 @@ include 'style.php';
           <li class="dropdown"><a href="#"><span>Profile</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-                 <li><a href="tambah_saldo.php">Tambah Saldo</a></li>
+              <?php
+              if ($_SESSION['role'] == 'admin') {
+                echo '<li><a href="admin/home.php">Home Admin</a></li>';
+              }
+              ?>
+              <li><a href="tambah_saldo.php">Tambah Saldo</a></li>
               <li><a href="logout.php">Log Out</a></li>
             </ul>
           </li>
