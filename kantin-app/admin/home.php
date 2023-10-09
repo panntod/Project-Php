@@ -64,7 +64,7 @@
                         <p>
                             Digunakan untuk mengkontrol data Warung
                         </p>
-                        <a href="#" class="readmore stretched-link">Check<i class="bi bi-arrow-right"></i></a>
+                        <a href="tampil_warung.php" class="readmore stretched-link">Check<i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

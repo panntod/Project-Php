@@ -15,11 +15,8 @@
             border-radius: 10px;
             box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
         }
-        .jarak-bawah {
-            margin-bottom: 20%
-        }
     </style>
-    <section class="container jarak-bawah jarak">
+    <section class="container jarak">
         <div>
             <div class="section-header">
                 <h2>History Transaksi</h2>
@@ -93,6 +90,6 @@
             </tbody>
         </table>
     </section>
-    <?php
-    include "footer.php";
-    ?>
+    <?php include 'scripts.php' ?>
+</body>
+</html>

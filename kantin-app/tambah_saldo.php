@@ -102,8 +102,8 @@
         }
     </style>
 
-        <!-- Main Content -->
-        <section>
+    <!-- Main Content -->
+    <section>
         <div class="container-fluid" data-aos="fade-up">
             <div class="row main-content bg-success text-center">
                 <div class="col-md-4 text-center company__info">
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        </section>
-        
-
-    <?php include 'footer.php' ?>
+    </section>
+    <?php include 'scripts.php' ?>
+</body>
+</html>

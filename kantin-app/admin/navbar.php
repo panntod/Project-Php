@@ -22,7 +22,7 @@ if ($_SESSION['status_login'] != true) {
                 <ul>
                     <li><a href="home.php">Home</a></li>
                     <li><a href="tampil_siswa.php">Tampil Siswa</a></li>
-                    <li><a href="#">Tampil Warung</a></li>
+                    <li><a href="tampil_warung.php">Tampil Warung</a></li>
                     <li class="dropdown"><a href="#"><span>Profile</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>

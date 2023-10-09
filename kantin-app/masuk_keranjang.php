@@ -20,5 +20,5 @@ if ($_POST) {
         'total' => $total
     );
 }
-header('location: keranjang.php');
+header('location: home.php#services');
 ?>

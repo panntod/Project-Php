@@ -19,13 +19,11 @@
             box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
         }
 
-        .jarak-bawah {
-            background: var(--color-primary);
-            margin-bottom: 20%
-        }
-
         .tombol-a {
             padding: 10px;
+        }
+        .checkout{
+            background: var(--color-primary);
         }
     </style>
 
@@ -38,7 +36,8 @@
             </div>
         </div>
 
-        <h5 class="tombol-a"><a href="home.php#services" title="More Details"><i class="bi bi-arrow-left"></i> Pesan Lagi</a>
+        <h5 class="tombol-a"><a href="home.php#services" title="More Details"><i class="bi bi-arrow-left"></i> Pesan
+                Lagi</a>
         </h5>
         <table class="table table-hover table-striped">
             <thead>
@@ -53,7 +52,6 @@
             </thead>
             <tbody>
                 <?php
-                // Inisialisasi variabel total belanja
                 $totalBelanja = 0;
 
                 // Periksa apakah session 'cart' sudah ada dan tidak kosong
@@ -100,7 +98,10 @@
                 </tr>
 
         </table>
-        <a href="checkout.php" class="btn tombol jarak-bawah" style="">Check
+        <a href="checkout.php" class="btn tombol checkout" style="">Check
             Out</a>
     </section>
-    <?php include "footer.php" ?>
+
+    <?php include 'scripts.php' ?>
+</body>
+</html>

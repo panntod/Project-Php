@@ -10,8 +10,16 @@
             display: flex;
             justify-content: space-between;
         }
-        .container{
-            margin-top: 3rem;
+
+        .container {
+            margin-top: 1rem;
+        }
+
+        .table td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 280px;
         }
     </style>
 
@@ -79,6 +87,7 @@
                 </tbody>
             </table>
         <?php } ?>
+        <a href="#" class="btn btn-primary tombol">TAMBAH WARUNG</a>
 
         <?php include 'link.scripts.php' ?>
     </section>
