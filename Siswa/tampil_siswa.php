@@ -12,8 +12,8 @@
     <div style="padding: 20px; display: flex; justify-content: space-between;">
         <h3>Tampil Siswa</h3>
         <div style="display: flex; gap: 10px;">
-            <a href="login.php" class="btn btn-secondary">Login</a>
-            <a href="tambah_siswa.php" class="btn btn-primary">Daftar</a>
+            <a href="tambah_siswa.php" class="btn btn-secondary">Daftar</a>
+            <a href="login.php" class="btn btn-success">Login</a>
         </div>
     </div>
 
