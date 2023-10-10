@@ -1,27 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1588580000645-4562a6d2c839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .login-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 1rem;
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="row" style="margin-top:50px;">
-    <div class="col-md"></div>
-    <div class="col-md rounded bg-light" style="box-shadow: 4px 4px 5px -4px;padding:10px">
-        <form action="proses_login.php" method="post">
-          <h3 align="center">LOGIN Perpus Online</h3>
-          Username:
-          <input type="text" name="username" value="" class="form-control">
-          password:
-          <input type="password" name="password" class="form-control"><br>
-        <center>
-          <input type="submit" name="login" class="btn btn-success" value="LOGIN" style="border-radius: 10px;">
-          <a href="tambah_siswa.php" class="btn btn-secondary" style="border-radius: 10px;">DAFTAR</a>
-        </center>
-      </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="login-form">
+                    <h2 class="text-center">Login</h2>
+                    <form action="proses_login.php">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md"></div>
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
+
 </html>
