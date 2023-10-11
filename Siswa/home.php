@@ -11,6 +11,13 @@ include "header.php";
         padding: 200px 0;
         color: #fff;
     }
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    p{
+        font-weight: 300;
+    }
 </style>
 <!-- landing page -->
 <section class="background-section">
