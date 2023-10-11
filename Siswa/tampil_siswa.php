@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Perpustakaan_Nasional_Republik_Indonesia_insignia.svg/1200px-Perpustakaan_Nasional_Republik_Indonesia_insignia.svg.png"
+        rel="icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -64,8 +67,8 @@
                         <?= $data_siswa['id_siswa'] ?>
                     </td>
                     <td>
-                        <a href="ubah_siswa.php?id_siswa=<?= $data_siswa['id_siswa'] ?>" class="btn btn-warning text-white"><i
-                                class="bi bi-pencil-square"></i></a>
+                        <a href="ubah_siswa.php?id_siswa=<?= $data_siswa['id_siswa'] ?>"
+                            class="btn btn-warning text-white"><i class="bi bi-pencil-square"></i></a>
                         <a href="hapus.php?id_siswa=<?= $data_siswa['id_siswa'] ?>"
                             onclick="return confirm('Apakah anda yakin menghapus data ini?')" class="btn btn-danger"><i
                                 class="bi bi-trash"></i></a>
