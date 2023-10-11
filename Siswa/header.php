@@ -14,7 +14,7 @@ if ($_SESSION['status_login'] != true) {
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 z-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100" style="z-index: 99;">
     <div class="container">
       <a class="navbar-brand" href="#">Perpustakaan Online</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

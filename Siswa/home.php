@@ -33,7 +33,7 @@ include "header.php";
             <div class="card">
                 <!-- Ikon menggunakan Bootstrap Icons -->
                 <div class="card-body">
-                    <i class="bi bi-book-half" style="font-size: 4em;"></i>
+                    <i class="bi bi-book-half" style="font-size: 2em;"></i>
                     <h5 class="card-title">Pinjam Buku</h5>
                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
                     <!-- Tautan ke halaman profil -->
@@ -47,7 +47,7 @@ include "header.php";
             <div class="card">
                 <!-- Ikon menggunakan Bootstrap Icons -->
                 <div class="card-body">
-                    <i class="bi bi-basket-fill" style="font-size: 4em;"></i>
+                    <i class="bi bi-basket-fill" style="font-size: 2em;"></i>
                     <h5 class="card-title">Keranjang</h5>
                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
                     <!-- Tautan ke halaman profil -->
@@ -61,7 +61,7 @@ include "header.php";
             <div class="card">
                 <!-- Ikon menggunakan Bootstrap Icons -->
                 <div class="card-body">
-                    <i class="bi bi-clipboard-fill" style="font-size: 4em;"></i>
+                    <i class="bi bi-clipboard-fill" style="font-size: 2em;"></i>
                     <h5 class="card-title">Transaksi</h5>
                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
                     <!-- Tautan ke halaman profil -->
