@@ -19,6 +19,9 @@ if ($_SESSION['status_login'] != true) {
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100" style="z-index: 99;">
     <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Perpustakaan_Nasional_Republik_Indonesia_insignia.svg/1200px-Perpustakaan_Nasional_Republik_Indonesia_insignia.svg.png"
+        alt="Logo Website" width="30" height="30" style="margin-right: 10px;">
       <a class="navbar-brand" href="#">Perpustakaan Online</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
