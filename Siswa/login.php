@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
+    <title>Login</title>
+    <link
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Perpustakaan_Nasional_Republik_Indonesia_insignia.svg/1200px-Perpustakaan_Nasional_Republik_Indonesia_insignia.svg.png"
+        rel="icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -18,7 +21,8 @@
             border-radius: 10px;
             margin-top: 100px;
         }
-        p{
+
+        p {
             margin: 1rem 0;
             text-align: center;
         }
@@ -32,22 +36,22 @@
                 <div class="login-form">
                     <h2 class="text-center">Login</h2>
                     <form action="proses_login.php" method="post"">
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Username"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password"
-                                placeholder="Password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Login</button>
-                        <p>Dont have any account? <a href="tambah_siswa.php">Register Here</a></p>
-                    </form>
+                        <div class=" form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                            required>
                 </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <p>Dont have any account? <a href="tambah_siswa.php">Register Here</a></p>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
