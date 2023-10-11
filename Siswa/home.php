@@ -65,7 +65,7 @@ include "header.php";
                     <h5 class="card-title">Transaksi</h5>
                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
                     <!-- Tautan ke halaman profil -->
-                    <a href="buku.php" class="btn btn-primary">PINJAM <i class="bi bi-journal-plus"></i></a>
+                    <a href="histori_peminjaman.php" class="btn btn-primary">LIHAT <i class="bi bi-arrow-up-right-square"></i></a>
                 </div>
             </div>
         </div>
