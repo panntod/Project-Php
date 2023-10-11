@@ -18,6 +18,10 @@
             border-radius: 10px;
             margin-top: 100px;
         }
+        p{
+            margin: 1rem 0;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -27,7 +31,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="login-form">
                     <h2 class="text-center">Login</h2>
-                    <form action="proses_login.php">
+                    <form action="proses_login.php" method="post"">
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" class="form-control" id="username" name="username" placeholder="Username"
@@ -39,6 +43,7 @@
                                 placeholder="Password" required>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <p>Dont have any account? <a href="tambah_siswa.php">Register Here</a></p>
                     </form>
                 </div>
             </div>
