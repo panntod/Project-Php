@@ -22,9 +22,46 @@
             margin-top: 100px;
         }
 
+        a {
+            color: #8B4513;
+        }
+
+        a:hover {
+            color: #8B4513;
+        }
+
         p {
             margin: 1rem 0;
             text-align: center;
+        }
+
+        .btn-brown {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            background-color: #8B4513;
+            border-color: #8B4513;
+        }
+
+        .btn-brown:focus {
+            box-shadow: 0 0 0 0.2rem #8B4513;
+            background-color: #8B4513;
+        }
+
+        .btn-brown:hover {
+            color: #fff;
+            border-color: #8B4513;
+            background-color: #DAC0A3;
+        }
+
+        .form-control:focus {
+            border-color: #8B4513;
+            box-shadow: none;
         }
     </style>
 </head>
@@ -46,8 +83,8 @@
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password"
                         required>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Login</button>
-                <p>Dont have any account? <a href="tambah_siswa.php">Register Here</a></p>
+                <button type="submit" class="btn btn-brown btn-block">Login</button>
+                <p class="mt-5">Dont have any account? <a href="tambah_siswa.php">Register Here</a></p>
                 </form>
             </div>
         </div>
