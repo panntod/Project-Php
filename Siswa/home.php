@@ -3,6 +3,7 @@ include "header.php";
 ?>
 <style>
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
     .background-section {
         background: url('https://lib.itspku.ac.id/wp-content/uploads/2021/12/fungsi-perpustakaan.jpg') no-repeat center center fixed;
         background-size: cover;
@@ -11,11 +12,13 @@ include "header.php";
         padding: 200px 0;
         color: #fff;
     }
-    h1{
+
+    h1 {
         font-size: 3rem;
         font-weight: 700;
     }
-    p{
+
+    p {
         font-weight: 300;
     }
 </style>
@@ -33,46 +36,59 @@ include "header.php";
 
 <!-- card -->
 <section class="container mt-5">
-    <div class="row">
+    <div class="row g-4">
 
-        <!-- Card Bootstrap -->
-        <div class="col-md-4">
-            <div class="card">
-                <!-- Ikon menggunakan Bootstrap Icons -->
-                <div class="card-body">
-                    <i class="bi bi-book-half d-flex justify-content-center mb-3" style="font-size: 2em; color: blue;"></i>
-                    <h5 class="card-title text-center">Pinjam Buku</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
-                    <!-- Tautan ke halaman profil -->
-                    <a href="buku.php" class="btn btn-primary">PINJAM <i class="bi bi-journal-plus"></i></a>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card Bootstrap -->
+            <div class="col">
+                <div class="card">
+                    <!-- Ikon menggunakan Bootstrap Icons -->
+                    <div class="card-body text-center">
+                        <i class="bi bi-book-half" style="font-size: 2em; color: blue;"></i>
+                        <h5 class="card-title">Pinjam Buku</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!
+                        </p>
+                        <!-- Tautan ke halaman profil -->
+                        <div class="d-flex justify-content-center">
+                            <a href="buku.php" class="btn btn-primary">PINJAM <i class="bi bi-journal-plus"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card Bootstrap -->
-        <div class="col-md-4">
-            <div class="card">
-                <!-- Ikon menggunakan Bootstrap Icons -->
-                <div class="card-body">
-                    <i class="bi bi-basket-fill d-flex justify-content-center mb-3" style="font-size: 2em; color: blue;"></i>
-                    <h5 class="card-title text-center">Keranjang</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
-                    <!-- Tautan ke halaman profil -->
-                    <a href="buku.php" class="btn btn-primary">LIHAT <i class="bi bi-arrow-up-right-square"></i></a>
+            <!-- Card Bootstrap -->
+            <div class="col">
+                <div class="card">
+                    <!-- Ikon menggunakan Bootstrap Icons -->
+                    <div class="card-body text-center">
+                        <i class="bi bi-basket-fill" style="font-size: 2em; color: blue;"></i>
+                        <h5 class="card-title">Keranjang</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!
+                        </p>
+                        <!-- Tautan ke halaman profil -->
+                        <div class="d-flex justify-content-center">
+                            <a href="buku.php" class="btn btn-primary">LIHAT <i
+                                    class="bi bi-arrow-up-right-square"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card Bootstrap -->
-        <div class="col-md-4">
-            <div class="card">
-                <!-- Ikon menggunakan Bootstrap Icons -->
-                <div class="card-body">
-                    <i class="bi bi-clipboard-fill d-flex justify-content-center mb-3" style="font-size: 2em; color: blue;"></i>
-                    <h5 class="card-title text-center">Transaksi</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!</p>
-                    <!-- Tautan ke halaman profil -->
-                    <a href="histori_peminjaman.php" class="btn btn-primary">LIHAT <i class="bi bi-arrow-up-right-square"></i></a>
+            <!-- Card Bootstrap -->
+            <div class="col">
+                <div class="card">
+                    <!-- Ikon menggunakan Bootstrap Icons -->
+                    <div class="card-body text-center">
+                        <i class="bi bi-clipboard-fill" style="font-size: 2em; color: blue;"></i>
+                        <h5 class="card-title">Transaksi</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, temporibus!
+                        </p>
+                        <!-- Tautan ke halaman profil -->
+                        <div class="d-flex justify-content-center">
+                            <a href="histori_peminjaman.php" class="btn btn-primary">LIHAT <i
+                                    class="bi bi-arrow-up-right-square"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
