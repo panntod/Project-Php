@@ -3,15 +3,25 @@ session_start();
 if ($_SESSION['status_login'] != true) {
   header('location: login.php');
 }
+// Deteksi apakah pengguna menggunakan perangkat mobile
+function isMobile()
+{
+  return (bool) preg_match('/(android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini)/i', $_SERVER['HTTP_USER_AGENT']);
+}
+
+if (isMobile()) {
+  // Jika perangkat adalah mobile, arahkan ke cannotPhone.php
+  header('Location: cannotPhone.php');
+  exit;
+}
 ?>
-<!DOCTYPE html>
-<html>
 
 <head>
   <link
     href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Perpustakaan_Nasional_Republik_Indonesia_insignia.svg/1200px-Perpustakaan_Nasional_Republik_Indonesia_insignia.svg.png"
     rel="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>Perpustakaan Online</title>
 </head>
 
