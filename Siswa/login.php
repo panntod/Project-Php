@@ -16,7 +16,7 @@
         }
 
         .login-form {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(222, 222, 222, 0.8);
             padding: 3rem 1rem;
             border-radius: 10px;
             margin-top: 100px;

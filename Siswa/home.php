@@ -38,9 +38,9 @@ include "header.php";
 <section class="container mt-5">
     <div class="row g-4">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row g-4">
             <!-- Card Bootstrap -->
-            <div class="col">
+            <div class="col-lg-4 col-12">
                 <div class="card">
                     <!-- Ikon menggunakan Bootstrap Icons -->
                     <div class="card-body text-center">
@@ -57,7 +57,7 @@ include "header.php";
             </div>
 
             <!-- Card Bootstrap -->
-            <div class="col">
+            <div class="col-lg-4 col-12">
                 <div class="card">
                     <!-- Ikon menggunakan Bootstrap Icons -->
                     <div class="card-body text-center">
@@ -75,7 +75,7 @@ include "header.php";
             </div>
 
             <!-- Card Bootstrap -->
-            <div class="col">
+            <div class="col-lg-4 col-12">
                 <div class="card">
                     <!-- Ikon menggunakan Bootstrap Icons -->
                     <div class="card-body text-center">

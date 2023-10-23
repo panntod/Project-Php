@@ -9,10 +9,9 @@ if($_POST){
     $password=$_POST['password'];
     $id_kelas=$_POST['id_kelas'];
     if(empty($nama_siswa)){
-        echo "<script>alert('nama siswa tidak boleh kosong');location.href='tampil_siswa.php';</script>";
-
+        echo "<script>alert('nama siswa tidak boleh kosong');location.href='ubah_siswa.php';</script>";
     } elseif(empty($username)){
-        echo "<script>alert('username tidak boleh kosong');location.href='tampil_siswa.php';</script>";
+        echo "<script>alert('username tidak boleh kosong');location.href='ubah_siswa.php';</script>";
     } else {
         include "connect.php";
         if(empty($password)){

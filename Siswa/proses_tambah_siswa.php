@@ -18,12 +18,10 @@ if($_POST){
         include "connect.php";
         $insert=mysqli_query($conn,"insert into siswa (nama_siswa,tanggal_lahir, gender, alamat, username, password, id_kelas) value ('".$nama_siswa."','".$tanggal_lahir."','".$gender."','".$alamat."','".$username."','".md5($password)."','".$id_class."')") or die(mysqli_error($conn));
         if($insert){
-            echo "<script>alert('Sukses menambahkan siswa');location.href='tambah_siswa.php';</script>";
-            header('location: login.php');
+            echo "<script>alert('Sukses menambahkan siswa');location.href='login.php';</script>";
         } else {
             echo "<script>alert('Gagal menambahkan siswa');location.href='tambah_siswa.php';</script>";
         }
     }
-
 }
 ?>
