@@ -2,8 +2,6 @@
 include "header.php";
 ?>
 <style>
-    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
-
     .background-section {
         background: url('https://lib.itspku.ac.id/wp-content/uploads/2021/12/fungsi-perpustakaan.jpg') no-repeat center center fixed;
         background-size: cover;
