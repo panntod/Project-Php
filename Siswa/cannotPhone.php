@@ -68,7 +68,7 @@
 
 <body>
     <div class="phone">
-        <img src="foto_produk/phone.png" alt="...">
+        <img src="img/phone.png" alt="...">
         <p>We're really sorry, This site not available on phone. Please Use a Bigger screen size such as Laptop/ Pc.</p>
     </div>
     <div class="notFound">
