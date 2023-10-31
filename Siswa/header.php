@@ -26,6 +26,21 @@ if ($_SESSION['status_login'] != true) {
   <title>Perpustakaan Online</title>
 </head>
 
+<style>
+  ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #0d1117;
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #d1d1d1;
+    }
+</style>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100" style="z-index: 99;">
     <div class="container">
