@@ -11,7 +11,7 @@ include "header.php";
         while ($dt_buku = mysqli_fetch_array($qry_buku)) {
             // Ambil data blob dari hasil query
             $blobData = $dt_buku["foto"];
-            
+
             // Buat URL blob
             $blobUrl = 'data:image/jpeg;base64,' . base64_encode($blobData);
             ?>
@@ -19,17 +19,23 @@ include "header.php";
                 <div class="card shadow">
                     <img src="<?= $blobUrl ?>" class="card-img-top" style="height: 200px">
                     <div class="card-body">
-                        <h5 class="card-title text-center">
+                        <h5 class="card-title text-center uppercase">
                             <?= $dt_buku['nama_buku'] ?>
                         </h5>
                         <p class="card-text text-center">
                             <?= $dt_buku['deskripsi'] ?>
                         </p>
-                        <a href="pinjam_buku.php?id_buku=<?= $dt_buku['id_buku'] ?>" class="btn btn-primary w-100">Pinjam</a>
-                        <div class="d-flex mt-3">
-                            <a href="ubah_buku.php?id_buku=<?= $dt_buku['id_buku'] ?>" class="btn btn-warning text-white w-50"><i class="bi bi-pencil-square"></i></a>
-                            <a href="hapus_buku.php?id_buku=<?= $dt_buku['id_buku'] ?>" class="btn btn-danger w-50 ms-3"><i class="bi bi-trash"></i></a>
-                        </div>
+                        <a href="pinjam_buku.php?id_buku=<?= $dt_buku['id_buku'] ?>"
+                            class="btn btn-primary w-100">Pinjam</a>
+                        <?php if ($_SESSION['role'] == 'admin'): ?>
+                            <div class="d-flex mt-3">
+                                <a href="ubah_buku.php?id_buku=<?= $dt_buku['id_buku'] ?>"
+                                    class="btn btn-warning text-white w-50"><i class="bi bi-pencil-square"></i></a>
+                                <a href="hapus_buku.php?id_buku=<?= $dt_buku['id_buku'] ?>" class="btn btn-danger w-50 ms-3"><i
+                                        class="bi bi-trash"></i></a>
+                            </div>
+                        <?php endif; ?>
+
                     </div>
                 </div>
             </div>
