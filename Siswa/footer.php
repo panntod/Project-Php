@@ -1,6 +1,6 @@
-<footer class="bg-dark text-light text-center py-1 mt-5">
+<footer class="bg-dark text-light text-center py-3">
     <div class="container">
-        <p>&copy; 2023 Pandhu Arya </p>
+        <p>&copy; 2023 <a href="https://panntod.github.io" class="text-decoration-none fw-semibold text-white">Pandhu Arya</a></p>
     </div>
 </footer>
 
