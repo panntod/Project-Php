@@ -3,17 +3,17 @@ session_start();
 if ($_SESSION['status_login'] != true) {
   header('location: login.php');
 }
-// // Deteksi apakah pengguna menggunakan perangkat mobile
-// function isMobile()
-// {
-//   return (bool) preg_match('/(android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini)/i', $_SERVER['HTTP_USER_AGENT']);
-// }
+// Deteksi apakah pengguna menggunakan perangkat mobile
+function isMobile()
+{
+  return (bool) preg_match('/(android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini)/i', $_SERVER['HTTP_USER_AGENT']);
+}
 
-// if (isMobile()) {
-//   // Jika perangkat adalah mobile, arahkan ke cannotPhone.php
-//   header('Location: cannotPhone.php');
-//   exit;
-// }
+if (isMobile()) {
+  // Jika perangkat adalah mobile, arahkan ke cannotPhone.php
+  header('Location: cannotPhone.php');
+  exit;
+}
 ?>
 
 <head>
@@ -38,6 +38,9 @@ if ($_SESSION['status_login'] != true) {
 
     ::-webkit-scrollbar-track {
         background-color: #d1d1d1;
+    }
+    .uppercase{
+      text-transform: capitalize;
     }
 </style>
 
