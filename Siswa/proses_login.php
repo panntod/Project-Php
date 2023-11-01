@@ -14,6 +14,7 @@ if ($_POST) {
             session_start();
             $_SESSION['id_siswa'] = $dt_login['id_siswa'];
             $_SESSION['nama_siswa'] = $dt_login['nama_siswa'];
+            $_SESSION['role'] = $dt_login['role'];
             $_SESSION['status_login'] = true;
             header("location: home.php");
         } else {

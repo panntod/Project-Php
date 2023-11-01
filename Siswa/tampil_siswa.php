@@ -30,7 +30,7 @@
                 <th>GENDER</th>
                 <th>USERNAME</th>
                 <th>KELAS</th>
-                <th>ID</th>
+                <th>ROLE</th>
                 <th>AKSI</th>
             </tr>
         </thead>
@@ -64,7 +64,7 @@
                         <?= $data_siswa['nama_kelas'] ?>
                     </td>
                     <td>
-                        <?= $data_siswa['id_siswa'] ?>
+                        <?= $data_siswa['role'] ?>
                     </td>
                     <td>
                         <a href="ubah_siswa.php?id_siswa=<?= $data_siswa['id_siswa'] ?>"
